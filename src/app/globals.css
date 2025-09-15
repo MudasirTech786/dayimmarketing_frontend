@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+@import "@fontsource/playfair-display/600.css"; /* semi-bold */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&display=swap');
+
+.font-orbitron {
+  font-family: 'Orbitron', sans-serif;
+}
+
 @layer base {
   @font-face {
     font-family: "Tangerine";

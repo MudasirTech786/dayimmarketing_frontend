@@ -48,14 +48,20 @@ function Home() {
                       md:h-[500px] lg:h-screen"
       >
         <div className="absolute top-0 h-full w-full bg-[rgba(0,0,0,0.5)]"></div>
-        <video
+        {/* <video
           src="/videos/dsa/building_clip3_2.mp4"
           autoPlay
           loop
           muted
           className="h-full w-full object-cover"
+        /> */}
+        <video
+          src="/videos/dl/video1.mp4"
+          autoPlay
+          loop
+          muted
+          className="h-full w-full object-cover"
         />
-
         <div
           className="absolute flex items-center top-0 h-full w-full px-[5%] z-10
                         md:pl-[15%]"
@@ -172,9 +178,8 @@ function Home() {
             className="text-second text-2xl w-[90%] font-semibold leading-normal drop-shadow-md  
                         lg:text-4xl lg:w-[60%] lg:ml-[-180px] lg:text-justify"
           >
-            DAYIM LIVING is the best residential project in Pakistan. It
-            combines modern lifestyle and urban dynamics with the views of
-            nature.
+            DAYIM LIVING is the best residential project in Lahore. It combines
+            modern lifestyle and urban dynamics with the views of nature.
           </p>
         </motion.div>
       </section>
@@ -191,7 +196,7 @@ function Home() {
                         md:px-[120px] md:h-[650px]"
         >
           <img
-            src="/images/dayim_living/f1.jpeg"
+            src="/images/dayim_living/img1.jpg"
             className="w-full h-full shadow-xl object-cover"
             alt=""
           />
@@ -205,32 +210,37 @@ function Home() {
                           lg:items-start"
           >
             <p className="w-[90%] text-lg text-gray font-semibold ">
-              DAYIM LIVING is a high-end luxury apartment, being developed by
-              DAYIM MARKETING. Given its location in one of the central
-              neighborhoods of Lahore, the residents of this project will be
-              surrounded by all the main attractions of the city. <br />
-              DAYIM LIVING is an LDA - approved project provides contemporary,
-              elegant and spacious living spaces that are designed to cater to
-              the urbanities’ modern lifestyle, complemented with traditional
-              values of living.
+              Welcome to Dayim Living Apartments, developed by DAYIM MARKETING
+              in the heart of Lahore. This LDA-approved project offers modern,
+              spacious studio apartments designed for urban dwellers, featuring
+              separate kitchens and lounges that exude luxurious sophistication.
+              Residents will enjoy a prime location with easy access to the
+              citys main attractions, all while experiencing a harmonious blend
+              of contemporary design and traditional values. With flexible
+              installment plans available, securing your ideal home and creating
+              new beginnings for you and your loved ones has never been easier.
               <br />
-              The exquisite studio, one bedroom, and two bedroom apartments of
-              DAYIM LIVING, come with a separate kitchen, lounge that are
-              designed to exude luxurious sophistication. There is an easy
-              instalment plan for these apartments, which will help you secure
-              these ideal accommodations where you can create new beginnings for
-              you and your loved ones.
+              Dayim Living offers one of the best return on investments (ROI) in
+              the real estate market. Known for its strategic locations, premium
+              amenities, and quality construction, Dayim Living attracts both
+              investors and residents, ensuring high demand and strong property
+              appreciation. The project is designed to maximize profitability,
+              whether through rental income or long-term value growth. Dayim
+              Marketing&apos;s expertise in market insights and project
+              management further enhances the ROI, making Dayim Living a top
+              choice for those seeking reliable and lucrative real estate
+              investments
             </p>
             <div className="flex w-full items-center justify-between">
               <Link
-                href="/payment_plans/payment-plan3.pdf"
+                href="/payment_plans/DL/plan3.pdf"
                 target="_blank"
                 className="flex items-center justify-center border-2 border-gray py-3 w-[250px] my-5 hover:scale-110 transition"
               >
                 <span className=" text-xl font-bold ">View Payment Plan</span>
               </Link>
               <Link
-                href="/payment_plans/catalogue-3.pdf"
+                href="/payment_plans/DL/catalogue.pdf"
                 target="_blank"
                 className="flex items-center justify-center border-2 border-gray py-3 w-[250px] my-5 hover:scale-110 transition"
               >
@@ -245,7 +255,7 @@ function Home() {
             className="mt-32 hidden w-[90%]
                           lg:inline-block"
           >
-            <img src="/images/dayim_living/f2.jpeg" alt="" />
+            <img src="/images/dayim_living/img2.jpg" alt="" />
           </motion.div>
         </div>
       </section>
@@ -391,8 +401,8 @@ function Home() {
 
             <div className="flex flex-col items-center justify-center gap-2">
               <img src="/images/dsa/fl3.PNG" className="h-[130px]" />
-              <h3 className="font-bold text-xl">RoofTop CAFE</h3>
-              <p className="text-center">RoofTop CAFE & BBQ For Residents</p>
+              <h3 className="font-bold text-xl">Wifi Services</h3>
+              <p className="text-center">Wifi Services For Residents</p>
             </div>
 
             <div className="flex flex-col items-center justify-center gap-2">
