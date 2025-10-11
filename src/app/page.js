@@ -7,6 +7,12 @@ import HomeSlider2 from "./dmComponents/sliders/HomeSlider2";
 import MainFooter from "./dmComponents/footer/MainFooter";
 import DiscoverSection from "./dmComponents/home/DiscoverSection";
 import HomeProducts from "./dmComponents/home/HomeProducts";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import { Navigation } from "swiper";
+import "swiper/css/navigation";
+
+
 
 const page = () => {
   const b_t_animation = {
@@ -27,43 +33,163 @@ const page = () => {
     <div className="min-h-screen w-full ">
       <NavBar videoBg={true} />
 
-      <div
-        className="h-[400px] w-full relative overflow-hidden
-                      md:h-[500px] lg:h-screen"
-      >
-        <div className="absolute top-0 h-full w-full bg-[rgba(0,0,0,0.7)]"></div>
-        {/* <img 
-          src='/images/dayimMarketing/home/home-bg.jpg'           
-          className='h-full w-full object-cover' 
-        />  */}
+      {/* ====== HERO SECTION ====== */}
+      <div className="h-[500px] w-full relative overflow-hidden 
+        md:h-[500px] lg:h-screen">
+
+        {/* Dark overlay (desktop video only) */}
+        <div className="absolute top-0 h-full w-full bg-[rgba(0,0,0,0.5)] z-10 hidden md:block"></div>
+
+        {/* ===== Desktop / Full screen version ===== */}
         <video
-          src="/videos/dm/dm-cover.mp4"
+          src="/videos/dm/main.mp4"
           autoPlay
           loop
           muted
-          className="h-full w-full object-cover"
+          className="hidden md:block h-full w-full object-cover"
         />
 
-        <div className="absolute flex items-center top-0 h-full w-full px-[5%] z-10">
-          <div className=" w-[60%]  mx-auto flex flex-col items-center justify-center gap-5">
-            <h2
-              className="text-white font-bold  w-full text-3xl text-center mt-10 
-                            lg:text-5xl md:text-4xl  md:mt-0"
-            >
-              Discover your place to live
-            </h2>
-            <p className="text-white text-2xl font-bold text-center">
-              Get started in few clicks
-            </p>
+        {/* ===== Mobile Slider version ===== */}
+        <div className="block md:hidden h-full w-full">
+          <Swiper
+            spaceBetween={0}
+            slidesPerView={1}
+            loop
+            autoplay={{ delay: 3000 }}
+            navigation={{ nextEl: ".swiper-button-next", prevEl: ".swiper-button-prev" }}
+            modules={[Navigation]}
+            className="h-full w-full"
+          >
+
+            {/* Slide 1 */}
+            <SwiperSlide>
+              <div className="relative h-full w-full">
+                <video
+                  src="/videos/dm/video1.mp4"
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  className="h-full w-full object-cover"
+                />
+                <div className="absolute top-0 left-0 h-full w-full bg-[rgba(0,0,0,0.5)] z-10"></div>
+                <div className="absolute top-0 h-full w-full z-20 flex flex-col items-center justify-center text-center px-6">
+                  <h2 className="text-second font-bold text-2xl">Dayim Signature Apartment</h2>
+                  <p className="text-white text-sm mt-2">Luxury apartments with modern design.</p>
+                  <Link
+                    href="/contact"
+                    className="mt-3 border border-white py-2 px-4 text-white text-sm font-semibold hover:scale-105 transition"
+                  >
+                    Contact Us
+                  </Link>
+                </div>
+              </div>
+            </SwiperSlide>
+
+            {/* Slide 2 */}
+            <SwiperSlide>
+              <div className="relative h-full w-full">
+                <video
+                  src="/videos/dm/video2.mp4"
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  className="h-full w-full object-cover"
+                />
+                <div className="absolute top-0 left-0 h-full w-full bg-[rgba(0,0,0,0.5)] z-10"></div>
+                <div className="absolute top-0 h-full w-full z-20 flex flex-col items-center justify-center text-center px-6">
+                  <h2 className="text-second font-bold text-2xl">Dayim Living</h2>
+                  <p className="text-white text-sm mt-2">Comfort and elegance for families.</p>
+                  <Link
+                    href="/dayim-living/contact"
+                    className="mt-3 border border-white py-2 px-4 text-white text-sm font-semibold hover:scale-105 transition"
+                  >
+                    Contact Us
+                  </Link>
+                </div>
+              </div>
+            </SwiperSlide>
+
+            {/* Slide 3 */}
+            <SwiperSlide>
+              <div className="relative h-full w-full">
+                <video
+                  src="/videos/dm/video3.mp4"
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  className="h-full w-full object-cover"
+                />
+                <div className="absolute top-0 left-0 h-full w-full bg-[rgba(0,0,0,0.5)] z-10"></div>
+                <div className="absolute top-0 h-full w-full z-20 flex flex-col items-center justify-center text-center px-6">
+                  <h2 className="text-second font-bold text-2xl">Dayim Zindagi</h2>
+                  <p className="text-white text-sm mt-2">Your dream lifestyle starts here.</p>
+                  <Link
+                    href="/dayim-zindagi/contact"
+                    className="mt-3 border border-white py-2 px-4 text-white text-sm font-semibold hover:scale-105 transition"
+                  >
+                    Contact Us
+                  </Link>
+                </div>
+              </div>
+            </SwiperSlide>
+          </Swiper>
+          {/* Mobile Navigation Arrows */}
+          <div className="absolute inset-0 flex items-center justify-between px-4 z-30 md:hidden">
+            <button className="swiper-button-prev  text-white px-3 py-2 rounded-full">
+              ‹
+            </button>
+            <button className="swiper-button-next text-white px-3 py-2 rounded-full">
+              ›
+            </button>
+          </div>
+
+        </div>
+
+        {/* ===== Desktop Overlay Content ===== */}
+        <div className="absolute top-0 h-full w-full z-20 hidden md:grid grid-cols-3">
+          {/* Panel 1 */}
+          <div className="flex flex-col items-center justify-center text-center px-6">
+            <h2 className="text-second font-bold text-3xl lg:text-4xl">Dayim Signature Apartment</h2>
+            <p className="text-white text-lg mt-2">Luxury apartments with modern design.</p>
             <Link
               href="/contact"
-              className="border-2 border-white py-3 px-8 text-white font-bold text-xl hover:scale-110 transition"
+              className="mt-3 border border-white py-2 px-6 text-white text-base font-semibold hover:scale-105 transition"
+            >
+              Contact Us
+            </Link>
+          </div>
+
+          {/* Panel 2 */}
+          <div className="flex flex-col items-center justify-center text-center px-6">
+            <h2 className="text-second font-bold text-3xl lg:text-4xl">Dayim Living</h2>
+            <p className="text-white text-lg mt-2">Comfort and elegance for families.</p>
+            <Link
+              href="/dayim-living/contact"
+              className="mt-3 border border-white py-2 px-6 text-white text-base font-semibold hover:scale-105 transition"
+            >
+              Contact Us
+            </Link>
+          </div>
+
+          {/* Panel 3 */}
+          <div className="flex flex-col items-center justify-center text-center px-6">
+            <h2 className="text-second font-bold text-3xl lg:text-4xl">Dayim Zindagi</h2>
+            <p className="text-white text-lg mt-2">Your dream lifestyle starts here.</p>
+            <Link
+              href="/dayim-zindagi/contact"
+              className="mt-3 border border-white py-2 px-6 text-white text-base font-semibold hover:scale-105 transition"
             >
               Contact Us
             </Link>
           </div>
         </div>
       </div>
+
+
+
 
       <motion.section
         initial="hide"

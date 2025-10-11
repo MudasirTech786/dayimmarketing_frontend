@@ -189,7 +189,7 @@ const InputField = ({ id, label, value, onChange, error, type = "text" }) => (
 
 const ContactInfo = () => (
   <div className="w-[90%] bg-fifth p-16 flex flex-col font-semibold text-lg lg:w-[30%]">
-    <h3 className="font-bold text-lg">Head Office:</h3>
+    {/* <h3 className="font-bold text-lg">Head Office:</h3>
     <p className="text-sm">
       9-A, 1st/F Main Commercial, Al-Kabir Town Phase 2, Lahore
     </p>
@@ -201,7 +201,7 @@ const ContactInfo = () => (
       className="text-second underline hover:text-third"
     >
       view map
-    </Link>
+    </Link> */}
     <h3 className="font-bold text-lg mt-5">Al-Kabir Office:</h3>
     <p className="text-sm">
       9-A, 1st/F Main Commercial, Al-Kabir Town Phase 2, Lahore.

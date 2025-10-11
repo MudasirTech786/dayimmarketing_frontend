@@ -117,7 +117,7 @@ function Contact() {
             className="w-[90%] bg-fifth p-16 flex flex-col font-semibold text-lg
                         lg:w-[30%]"
           >
-            <h3 className="font-bold text-lg">Head Office:</h3>
+            {/* <h3 className="font-bold text-lg">Head Office:</h3>
             <p className="text-sm">
               9-A, 1st/F Main Commercial, Al-Kabir Town Phase 2, Lahore
             </p>
@@ -128,7 +128,7 @@ function Contact() {
               className="text-second underline hover:text-third"
             >
               view map
-            </Link>
+            </Link> */}
 
             <h3 className="font-bold text-lg mt-5">Al-Kabir Office:</h3>
             <p className="text-sm">
@@ -143,7 +143,7 @@ function Contact() {
               view map
             </Link>
 
-            <h3 className="font-bold text-lg mt-5">US Office:</h3>
+            {/* <h3 className="font-bold text-lg mt-5">US Office:</h3>
             <p className="text-sm">
               Suite # 368, 30 Lake Avenue Riverhead, NY, 11901.
             </p>
@@ -154,7 +154,7 @@ function Contact() {
               className="text-second underline hover:text-third"
             >
               view map
-            </Link>
+            </Link> */}
 
             <h3 className="font-bold text-lg mt-5">Project Site:</h3>
             <span className="text-sm font-bold">

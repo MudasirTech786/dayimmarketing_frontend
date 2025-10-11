@@ -36,12 +36,14 @@ export default function HomeSlider2() {
           className="h-full w-full bg-transparent"
         >
           <SwiperSlide>
+            <SwiperSlide>
             <HomeSlider2Item
-              image={"/images/dayimMarketing/agents/FarahHafeez.jpg"}
-              name={"Farah Hafeez"}
-              designation={"Senior Sales Associate"}
-              office={""}
+              image={"/images/dayimMarketing/agents/TaimoorKhan.jpg"}
+              name={"Mr. Taimoor Haider Khan"}
+              designation={"Operations Manager"}
+              office={"Head Office Bahria Town"}
             />
+          </SwiperSlide>
           </SwiperSlide>
 
           <SwiperSlide>
