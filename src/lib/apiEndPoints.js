@@ -1,4 +1,4 @@
-const API = process.env.NEXT_PUBLIC_BACKEND_API_URL + "/api";
+const API = "https://portal.dayimmarketing.com/api";
 export const GET_ALL_PROPERTIES_API = `${API}/products`;
 export const GET_ALL_Z_PROPERTIES_API = `${API}/zindagi_products`;
 export const GET_DM_EVENTS_API = `${API}/dm_events`;

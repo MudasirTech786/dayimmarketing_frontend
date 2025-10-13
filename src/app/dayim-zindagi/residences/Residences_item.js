@@ -101,7 +101,7 @@ function Residences_item({
       <div className="relative">
         <Zoom>
           <img
-            src={`${process.env.NEXT_PUBLIC_BACKEND_API_URL}/uploads/${image}`}
+            src={`https://portal.dayimmarketing.com/uploads/${image}`}
             alt={title}
             className="w-full h-auto max-h-[400px] object-contain bg-black"
           />

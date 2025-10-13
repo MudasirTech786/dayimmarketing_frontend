@@ -177,8 +177,9 @@ function Residences_item({
       {/* dialogue ends */}
 
       <Zoom>
+        {/* src={`https://portal.dayimmarketing.com/uploads/${image}`} */}
         <img
-          src={`${process.env.NEXT_PUBLIC_BACKEND_API_URL}/uploads/${image}`}
+          src={`https://portal.dayimmarketing.com/uploads/${image}`}
           alt=""
           className="h-[200px] w-[150px] object-contain"
         />
