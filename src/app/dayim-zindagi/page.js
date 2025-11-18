@@ -283,7 +283,7 @@ function Home() {
                   <span>View Payment Plan</span>
                 </Link>
 
-                <Link
+                {/* <Link
                   href="#"
                   onClick={(e) => e.preventDefault()}
                   className="group flex items-center justify-center gap-3 py-3 px-6 rounded-xl w-full sm:w-[260px]
@@ -311,7 +311,7 @@ function Home() {
                     />
                   </svg>
                   <span>Catalogue</span>
-                </Link>
+                </Link> */}
               </div>
 
             </motion.blockquote>
@@ -335,7 +335,7 @@ function Home() {
                 className="rounded-[28px] overflow-hidden relative"
               >
                 <img
-                  src="/images/dsa/elevation-side-view_zindagi.JPG"
+                  src="/images/dsa/elevation-side-view_zindagi - 1.JPG"
                   alt="Dayim Zindagi"
                   className="w-full h-[700px] object-cover"
                 />

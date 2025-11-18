@@ -4,7 +4,7 @@ import React from 'react'
 const DiscoverSection = ({heading, subHeading, link, linkTitle, bgImage, mapLink, bgVideo }) => {
   return (
     <div className="h-[400px] w-full relative
-                      md:h-[500px] lg:h-[700px]">
+                      md:h-[500px] lg:h-[700px] p-[20px] lg:px-[200px]">
         <div className="absolute h-full w-[95%] flex items-center justify-start z-10
                 md:w-[40%]">
             <div className="h-full w-[65%] bg-white bg-opacity-0 md:bg-opacity-70">

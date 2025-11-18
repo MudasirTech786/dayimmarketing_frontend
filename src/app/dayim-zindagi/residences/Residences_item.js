@@ -116,43 +116,42 @@ function Residences_item({
         </h3>
         <p className="text-sm text-gray-400">{title}</p>
 
-       {/* INFO GRID */}
-<div className="grid grid-cols-2 gap-3 mt-5 text-sm">
-  <div className="flex items-center gap-2">
-    <Layers size={16} className="text-[#d6ad42]" />
-    <span>Floor {floor}</span>
-  </div>
-  <div className="flex items-center gap-2">
-    <Square size={16} className="text-[#d6ad42]" />
-    <span>{size} Sq.Ft</span>
-  </div>
+        {/* INFO GRID */}
+        <div className="grid grid-cols-2 gap-3 mt-5 text-sm">
+          <div className="flex items-center gap-2">
+            <Layers size={16} className="text-[#d6ad42]" />
+            <span>Floor {floor}</span>
+          </div>
+          <div className="flex items-center gap-2">
+            <Square size={16} className="text-[#d6ad42]" />
+            <span>{size} Sq.Ft</span>
+          </div>
 
-  {/* Crown + Type + Badge */}
-  <div className="flex items-center gap-2 col-span-2">
-    <Crown size={16} className="text-[#d6ad42]" />
-    <span className="font-medium">{s_type + " - " + number}</span>
+          {/* Crown + Type + Badge */}
+          <div className="flex items-center gap-2 col-span-2">
+            <Crown size={16} className="text-[#d6ad42]" />
+            <span className="font-medium">{s_type + " - " + number}</span>
 
-    {/* Status Badge */}
-    <span
-      className={`ml-auto px-4 py-1.5 text-sm font-bold rounded-full shadow-md ${
-        sold === "No"
-          ? "bg-[#15803d] text-white border border-[#14532d]"   // Dark Green
-          : sold === "Reserved"
-          ? "bg-[#d6ad42] text-black border border-[#b8860b]"   // Gold
-          : "bg-[#b91c1c] text-white border border-[#7f1d1d]"   // Deep Red
-      }`}
-    >
-      {sold === "No" ? "AVAILABLE" : sold === "Reserved" ? "RESERVED" : "SOLD"}
-    </span>
-  </div>
-</div>
+            {/* Status Badge */}
+            <span
+              className={`ml-auto px-4 py-1.5 text-sm font-bold rounded-full shadow-md ${sold === "No"
+                  ? "bg-[#15803d] text-white border border-[#14532d]"   // Dark Green
+                  : sold === "Reserved"
+                    ? "bg-[#d6ad42] text-black border border-[#b8860b]"   // Gold
+                    : "bg-[#b91c1c] text-white border border-[#7f1d1d]"   // Deep Red
+                }`}
+            >
+              {sold === "No" ? "AVAILABLE" : sold === "Reserved" ? "RESERVED" : "SOLD"}
+            </span>
+          </div>
+        </div>
 
 
         {/* PURCHASE INFO */}
         {sold !== "No" && sold !== "Reserved" && (
           <div className="mt-4">
             <h4 className="text-xs font-bold text-gray-400">Purchased By</h4>
-            <span className="bg-red-600/90 px-3 py-1 rounded-md text-sm font-bold">
+            <span className="bg-red-600/90 px-3 py-1 rounded-md text-xl font-bold text-[#d6ad42]">
               {purchased_by}
             </span>
           </div>

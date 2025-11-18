@@ -35,7 +35,8 @@ export default function HomeTab() {
       name: "Lower Ground Floor",
       floors: ["Lower Ground"],
       image: "/images/dz/tabs/lowerground.jpg",
-      type: "Shops/Offices",
+      type: "Two Bed Appartment",
+      type1: "",
     },
     {
       name: "Ground Floor",
@@ -47,7 +48,7 @@ export default function HomeTab() {
       name: "1st - 2nd Floor",
       floors: ["1st", "2nd"],
       image: "/images/dz/tabs/floor12.jpg",
-      type: "Shops/Offices",
+      type: "Stidio Appartment",
     },
     {
       name: "3rd - 5th Floor",
@@ -92,14 +93,14 @@ export default function HomeTab() {
       {/* Desktop Tabs */}
       <Tab.Group selectedIndex={selectedFloor} onChange={setSelectedFloor}>
         <div className="hidden md:flex justify-center overflow-x-auto">
-          <Tab.List className="flex gap-4 px-4 py-2">
+          <Tab.List className="flex gap-4 px-4 py-2 ">
             {tabs.map((tab) => (
               <Tab key={tab.name} as={Fragment}>
                 {({ selected }) => (
                   <button
                     className={`flex-shrink-0 min-w-[140px] px-4 py-2 rounded-full font-semibold border-2 transition-all duration-300 ${selected
-                        ? "bg-gradient-to-r from-purple-500 to-indigo-500 text-second border-[#d6ad42] shadow-lg"
-                        : "bg-gray-100 text-gray-700 border-black hover:bg-gray-200"
+                      ? "bg-gradient-to-r from-purple-500 to-indigo-500 text-second border-[#d6ad42] shadow-lg"
+                      : "bg-gray-100 text-gray-700 border-black hover:bg-gray-200"
                       }`}
                   >
                     {tab.name}
@@ -120,9 +121,14 @@ export default function HomeTab() {
               <Tab.Panel key={tab.name}>
                 <HomeTabItem
                   image={tab.image}
-                  size={minSize} // ✅ exact min size from DB
+                  size={minSize}
                   availableUnits={availableUnits}
-                  freeUnits={`${availableUnits} - ${tab.type} Available`}
+                  freeUnits={
+                    <div className="flex flex-col text-left pl-8">
+                      <span>{availableUnits} - {tab.type} Available</span>
+                      {tab.type1 && <span>{availableUnits} - {tab.type1} Available</span>}
+                    </div>
+                  }
                 />
               </Tab.Panel>
             );

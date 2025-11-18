@@ -34,23 +34,26 @@ const page = () => {
       <NavBar videoBg={true} />
 
       {/* ====== HERO SECTION ====== */}
-      <div className="h-[500px] w-full relative overflow-hidden 
-        md:h-[500px] lg:h-screen">
-
+      <div
+        className="h-[500px] w-full relative overflow-hidden 
+  sm:h-[500px] md:h-[600px] lg:h-screen"
+      >
         {/* Dark overlay (desktop video only) */}
-        <div className="absolute top-0 h-full w-full bg-[rgba(0,0,0,0.5)] z-10 hidden md:block"></div>
+        <div className="absolute top-0 h-full w-full bg-[rgba(0,0,0,0.5)] z-10 hidden lg:block"></div>
 
         {/* ===== Desktop / Full screen version ===== */}
+        {/* ⛔ Now only visible on large (desktop) screens */}
         <video
           src="/videos/dm/main.mp4"
           autoPlay
           loop
           muted
-          className="hidden md:block h-full w-full object-cover"
+          className="hidden lg:block h-full w-full object-cover"
         />
 
-        {/* ===== Mobile Slider version ===== */}
-        <div className="block md:hidden h-full w-full">
+        {/* ===== Mobile + Tablet (iPad) Slider version ===== */}
+        {/* ✅ Changed md:hidden → lg:hidden so both mobile and tablet show the slider */}
+        <div className="block lg:hidden h-full w-full">
           <Swiper
             spaceBetween={0}
             slidesPerView={1}
@@ -60,7 +63,6 @@ const page = () => {
             modules={[Navigation]}
             className="h-full w-full"
           >
-
             {/* Slide 1 */}
             <SwiperSlide>
               <div className="relative h-full w-full">
@@ -74,13 +76,13 @@ const page = () => {
                 />
                 <div className="absolute top-0 left-0 h-full w-full bg-[rgba(0,0,0,0.5)] z-10"></div>
                 <div className="absolute top-0 h-full w-full z-20 flex flex-col items-center justify-center text-center px-6">
-                  <h2 className="text-second font-bold text-2xl">Dayim Signature Apartment</h2>
-                  <p className="text-white text-sm mt-2">Luxury apartments with modern design.</p>
+                  <h2 className="text-second font-bold text-2xl md:text-3xl">Dayim Signature Apartment</h2>
+                  <p className="text-white text-sm md:text-base mt-2">Luxury apartments with modern design.</p>
                   <Link
-                    href="/contact"
-                    className="mt-3 border border-white py-2 px-4 text-white text-sm font-semibold hover:scale-105 transition"
+                    href="/dayim-signature-apartments"
+                    className="mt-3 border border-white py-2 px-4 md:px-6 text-white text-sm md:text-base font-semibold hover:scale-105 transition"
                   >
-                    Contact Us
+                    Explore
                   </Link>
                 </div>
               </div>
@@ -99,13 +101,13 @@ const page = () => {
                 />
                 <div className="absolute top-0 left-0 h-full w-full bg-[rgba(0,0,0,0.5)] z-10"></div>
                 <div className="absolute top-0 h-full w-full z-20 flex flex-col items-center justify-center text-center px-6">
-                  <h2 className="text-second font-bold text-2xl">Dayim Living</h2>
-                  <p className="text-white text-sm mt-2">Comfort and elegance for families.</p>
+                  <h2 className="text-second font-bold text-2xl md:text-3xl">Dayim Living</h2>
+                  <p className="text-white text-sm md:text-base mt-2">Comfort and elegance for families.</p>
                   <Link
-                    href="/dayim-living/contact"
-                    className="mt-3 border border-white py-2 px-4 text-white text-sm font-semibold hover:scale-105 transition"
+                    href="/dayim-living"
+                    className="mt-3 border border-white py-2 px-4 md:px-6 text-white text-sm md:text-base font-semibold hover:scale-105 transition"
                   >
-                    Contact Us
+                    Explore
                   </Link>
                 </div>
               </div>
@@ -124,41 +126,37 @@ const page = () => {
                 />
                 <div className="absolute top-0 left-0 h-full w-full bg-[rgba(0,0,0,0.5)] z-10"></div>
                 <div className="absolute top-0 h-full w-full z-20 flex flex-col items-center justify-center text-center px-6">
-                  <h2 className="text-second font-bold text-2xl">Dayim Zindagi</h2>
-                  <p className="text-white text-sm mt-2">Your dream lifestyle starts here.</p>
+                  <h2 className="text-second font-bold text-2xl md:text-3xl">Dayim Zindagi</h2>
+                  <p className="text-white text-sm md:text-base mt-2">Your dream lifestyle starts here.</p>
                   <Link
-                    href="/dayim-zindagi/contact"
-                    className="mt-3 border border-white py-2 px-4 text-white text-sm font-semibold hover:scale-105 transition"
+                    href="/dayim-zindagi"
+                    className="mt-3 border border-white py-2 px-4 md:px-6 text-white text-sm md:text-base font-semibold hover:scale-105 transition"
                   >
-                    Contact Us
+                    Explore
                   </Link>
                 </div>
               </div>
             </SwiperSlide>
           </Swiper>
-          {/* Mobile Navigation Arrows */}
-          <div className="absolute inset-0 flex items-center justify-between px-4 z-30 md:hidden">
-            <button className="swiper-button-prev  text-white px-3 py-2 rounded-full">
-              ‹
-            </button>
-            <button className="swiper-button-next text-white px-3 py-2 rounded-full">
-              ›
-            </button>
-          </div>
 
+          {/* Mobile + Tablet Navigation Arrows */}
+          <div className="absolute inset-0 flex items-center justify-between px-4 z-30 lg:hidden">
+            <button className="swiper-button-prev text-white px-3 py-2 rounded-full">‹</button>
+            <button className="swiper-button-next text-white px-3 py-2 rounded-full">›</button>
+          </div>
         </div>
 
         {/* ===== Desktop Overlay Content ===== */}
-        <div className="absolute top-0 h-full w-full z-20 hidden md:grid grid-cols-3">
+        <div className="absolute top-0 h-full w-full z-20 hidden lg:grid grid-cols-3">
           {/* Panel 1 */}
           <div className="flex flex-col items-center justify-center text-center px-6">
             <h2 className="text-second font-bold text-3xl lg:text-4xl">Dayim Signature Apartment</h2>
             <p className="text-white text-lg mt-2">Luxury apartments with modern design.</p>
             <Link
-              href="/contact"
+              href="/dayim-signature-apartments"
               className="mt-3 border border-white py-2 px-6 text-white text-base font-semibold hover:scale-105 transition"
             >
-              Contact Us
+              Explore
             </Link>
           </div>
 
@@ -167,10 +165,10 @@ const page = () => {
             <h2 className="text-second font-bold text-3xl lg:text-4xl">Dayim Living</h2>
             <p className="text-white text-lg mt-2">Comfort and elegance for families.</p>
             <Link
-              href="/dayim-living/contact"
+              href="/dayim-living"
               className="mt-3 border border-white py-2 px-6 text-white text-base font-semibold hover:scale-105 transition"
             >
-              Contact Us
+              Explore
             </Link>
           </div>
 
@@ -179,14 +177,15 @@ const page = () => {
             <h2 className="text-second font-bold text-3xl lg:text-4xl">Dayim Zindagi</h2>
             <p className="text-white text-lg mt-2">Your dream lifestyle starts here.</p>
             <Link
-              href="/dayim-zindagi/contact"
+              href="/dayim-zindagi"
               className="mt-3 border border-white py-2 px-6 text-white text-base font-semibold hover:scale-105 transition"
             >
-              Contact Us
+              Explore
             </Link>
           </div>
         </div>
       </div>
+
 
 
 
@@ -202,7 +201,7 @@ const page = () => {
           className="w-full h-full flex flex-col items-start justify-center gap-5
                         md:w-[60%]"
         >
-          <h3 className="font-bold text-4xl ">Welcome to Dayim Marketing</h3>
+          <h3 className="font-bold text-4xl ">Welcome to Dayim Marketing and Developers</h3>
           <p>
             One of the leading firms in the real estate and marketing industry.
             Since 2021, we have been dedicated to providing exceptional services
@@ -235,20 +234,6 @@ const page = () => {
         className="flex items-center justify-center"
       >
         <HomeProducts />
-      </motion.section>
-
-      <motion.section
-        initial="hide"
-        whileInView="show"
-        variants={b_t_animation}
-      >
-        <DiscoverSection
-          heading={"Discover Our New Selection Properties"}
-          subHeading={"CHOOSE FROM DIFFERENT LISTING TYPE, SIZE AND VIEW."}
-          link={"/dayim-signature-apartments"}
-          bgImage={"/images/dsa/building_bg5.png"}
-          linkTitle={"Explore"}
-        />
       </motion.section>
 
       <motion.section
@@ -375,6 +360,21 @@ const page = () => {
           </div>
         </div>
       </motion.section>
+
+      <motion.section
+        initial="hide"
+        whileInView="show"
+        variants={b_t_animation}
+      >
+        <DiscoverSection
+          heading={"Explore Our Latest Dayim Zindagi Residences"}
+          subHeading={"CHOOSE FROM DIFFERENT LISTING TYPE, SIZE AND VIEW."}
+          link={"/dayim-zindagi/residences"}
+          bgImage={"/images/dsa/zindagi5.png"}
+          linkTitle={"Explore"}
+        />
+      </motion.section>
+
 
       <motion.section
         initial="hide"

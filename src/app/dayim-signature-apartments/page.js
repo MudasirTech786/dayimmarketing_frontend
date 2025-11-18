@@ -7,6 +7,7 @@ import React from "react";
 import Link from "next/link";
 import HomeSlider1 from "./components/sliders/HomeSlider1";
 import HomeTab from "./components/Tabs/HomeTab";
+import HomeTab1 from "./components/Tabs/HomeTab1";
 import HomeSlider2 from "./components/sliders/HomeSlider2";
 import HomeSlider3 from "./components/sliders/HomeSlider3";
 
@@ -64,15 +65,7 @@ function Home() {
               className=" flex flex-col md:flex-row items-center gap-5
                             md:gap-20 md:mt-10"
             >
-              <div className="hidden md:block">
-                <h3 className="text-white font-bold text-2xl">Explore DSA</h3>
-                <Link
-                  href="/dayim-signature-apartments#section2"
-                  className="text-gray font-semibold text-lg hover:text-white "
-                >
-                  Scroll down
-                </Link>
-              </div>
+              
               <Link
                 href="/dayim-signature-apartments/vr"
                 className="flex items-center justify-center border-2 border-white py-3 w-[250px] gap-5 hover:scale-110 transition
@@ -287,6 +280,19 @@ function Home() {
           Choose the right apartment for your needs, taste, and possibilities.
         </p>
         <HomeTab />
+      </motion.section>
+      
+      <motion.section
+        initial="hide"
+        whileInView="show"
+        variants={b_t_animation}
+        className="flex flex-col items-center justify-center p-10 bg-white gap-10"
+      >
+        <h3 className="text-second text-4xl font-bold">Latest Events</h3>
+        <p className="text-first text-lg max-w-xl">
+      Stay tuned! See what’s new and exciting.
+    </p>
+        <HomeTab1 />
       </motion.section>
 
       <motion.section

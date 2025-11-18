@@ -165,7 +165,7 @@ function NavBar({ videoBg }) {
                     Experiences
                   </Link>
                 </li>
-                <li
+                {/* <li
                   className={`${
                     navbar
                       ? "text-black"
@@ -184,7 +184,7 @@ function NavBar({ videoBg }) {
                   >
                     Events
                   </Link>
-                </li>
+                </li> */}
                 <li
                   className={`${
                     navbar

@@ -58,15 +58,7 @@ function About() {
               className=" flex flex-col md:flex-row items-center gap-5
                             md:gap-20 md:mt-10"
             >
-              <div className="hidden md:block">
-                <h3 className="text-white font-bold text-2xl">Explore DSA</h3>
-                <Link
-                  href="/dayim-signature-apartments#section2"
-                  className="text-gray font-semibold text-lg hover:text-white "
-                >
-                  Scroll down
-                </Link>
-              </div>
+              
               <Link
                 href="/dayim-signature-apartments/vr"
                 className="flex items-center justify-center border-2 border-white py-3 w-[250px] gap-5 hover:scale-110 transition

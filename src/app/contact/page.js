@@ -170,7 +170,7 @@ function Contact() {
             >
               view map
             </Link>
-
+            <br></br>
             <span className="text-sm font-bold">(Dayim Living)</span>
             <p className="text-sm">
               Plot 22 Block C, Commercial Area Al-Kabir Town, Raiwind Rd, Phase
@@ -178,6 +178,19 @@ function Contact() {
             </p>
             <Link
               href="https://maps.app.goo.gl/nxKu3u7UPPhV6iJQA"
+              target="_blank"
+              className="text-second underline hover:text-third"
+            >
+              view map
+            </Link>
+            <br></br>
+            <span className="text-sm font-bold">(Dayim Zindagi)</span>
+            <p className="text-sm">
+              Plot# 1 & 2, Business Bay, Main Raiwind Road, Commercial Block B
+              Phase 2 Al Kabir Town, Lahore.
+            </p>
+            <Link
+              href="https://www.google.com/maps/place/Dayim+Zindagi/data=!4m2!3m1!1s0x0:0xfb9f8de4e331182b?sa=X&ved=1t:2428&hl=en-GB&ictx=111"
               target="_blank"
               className="text-second underline hover:text-third"
             >

@@ -22,15 +22,15 @@ const HomeProducts = () => {
       >
         {/* <HomeProductsItem houseImg="/images/dayimMarketing/home/houses/house1.jpeg" /> */}
         <HomeProductsItem
-          houseImg="/images/dsa/vr/studio/2.png"
+          houseImg="/images/dsa/vr/dz/studiio.png"
           type="Studio Apartments"
         />
         <HomeProductsItem
-          houseImg="/images/dsa/vr/one_bed/5.jpg"
+          houseImg="/images/dsa/vr/dz/onebed.png"
           type="1 Bed Apartments"
         />
         <HomeProductsItem
-          houseImg="/images/dsa/vr/two_bed/02.jpg"
+          houseImg="/images/dsa/vr/dz/twobed.png"
           type="2 Bed Apartments"
         />
         {/* <HomeProductsItem houseImg="/images/dayimMarketing/home/houses/house5.jpeg" /> */}

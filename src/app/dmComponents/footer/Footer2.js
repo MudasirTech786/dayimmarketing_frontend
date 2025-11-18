@@ -36,9 +36,20 @@ function Footer2() {
 
         <div>
           <h3 className="text-4xl font-bold">Contact Us</h3>
-          <p className="mt-10 text-lg font-bold">+92-423-597-617-4</p>
           <p className="mt-5 text-lg font-bold">+92-308-511-117-6</p>
-          <p className="mt-5 text-lg font-bold">+1(718)715-8208</p>
+          <br></br>
+          <h3 className="text-4xl font-bold">Location</h3>
+          <p className="text-sm mt-5">
+            9-A, 1st/F Main Commercial, Al-Kabir Town Phase 2, Lahore
+          </p>
+          <p className="text-sm">+92-308-5111176</p>
+          <Link
+            href="https://goo.gl/maps/2eyWmxmZH1FS8bFg8"
+            target="_blank"
+            className="text-second underline hover:text-third"
+          >
+            view map
+          </Link>
         </div>
 
         <div
