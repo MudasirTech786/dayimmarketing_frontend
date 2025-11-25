@@ -148,42 +148,69 @@ const page = () => {
 
         {/* ===== Desktop Overlay Content ===== */}
         <div className="absolute top-0 h-full w-full z-20 hidden lg:grid grid-cols-3">
-          {/* Panel 1 */}
-          <div className="flex flex-col items-center justify-center text-center px-6">
-            <h2 className="text-second font-bold text-3xl lg:text-4xl">Dayim Signature Apartment</h2>
-            <p className="text-white text-lg mt-2">Luxury apartments with modern design.</p>
-            <Link
-              href="/dayim-signature-apartments"
-              className="mt-3 border border-white py-2 px-6 text-white text-base font-semibold hover:scale-105 transition"
-            >
-              Explore
-            </Link>
-          </div>
 
-          {/* Panel 2 */}
-          <div className="flex flex-col items-center justify-center text-center px-6">
-            <h2 className="text-second font-bold text-3xl lg:text-4xl">Dayim Living</h2>
-            <p className="text-white text-lg mt-2">Comfort and elegance for families.</p>
-            <Link
-              href="/dayim-living"
-              className="mt-3 border border-white py-2 px-6 text-white text-base font-semibold hover:scale-105 transition"
-            >
-              Explore
-            </Link>
-          </div>
+  {/* Panel 1 */}
+  <div className="flex flex-col items-center justify-center text-center px-6">
+    <h2 className="text-second font-bold
+      text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl leading-tight">
+      Dayim Signature Apartment
+    </h2>
 
-          {/* Panel 3 */}
-          <div className="flex flex-col items-center justify-center text-center px-6">
-            <h2 className="text-second font-bold text-3xl lg:text-4xl">Dayim Zindagi</h2>
-            <p className="text-white text-lg mt-2">Your dream lifestyle starts here.</p>
-            <Link
-              href="/dayim-zindagi"
-              className="mt-3 border border-white py-2 px-6 text-white text-base font-semibold hover:scale-105 transition"
-            >
-              Explore
-            </Link>
-          </div>
-        </div>
+    <p className="text-white
+      text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl mt-3">
+      Luxury apartments with modern design.
+    </p>
+
+    <Link
+      href="/dayim-signature-apartments"
+      className="mt-4 border border-white py-2 px-6 text-white text-base font-semibold hover:scale-105 transition"
+    >
+      Explore
+    </Link>
+  </div>
+
+  {/* Panel 2 */}
+  <div className="flex flex-col items-center justify-center text-center px-6">
+    <h2 className="text-second font-bold
+      text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl leading-tight">
+      Dayim Living
+    </h2>
+
+    <p className="text-white
+      text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl mt-3">
+      Comfort and elegance for families.
+    </p>
+
+    <Link
+      href="/dayim-living"
+      className="mt-4 border border-white py-2 px-6 text-white text-base font-semibold hover:scale-105 transition"
+    >
+      Explore
+    </Link>
+  </div>
+
+  {/* Panel 3 */}
+  <div className="flex flex-col items-center justify-center text-center px-6">
+    <h2 className="text-second font-bold
+      text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl leading-tight">
+      Dayim Zindagi
+    </h2>
+
+    <p className="text-white
+      text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl mt-3">
+      Your dream lifestyle starts here.
+    </p>
+
+    <Link
+      href="/dayim-zindagi"
+      className="mt-4 border border-white py-2 px-6 text-white text-base font-semibold hover:scale-105 transition"
+    >
+      Explore
+    </Link>
+  </div>
+
+</div>
+
       </div>
 
 
@@ -370,7 +397,7 @@ const page = () => {
           heading={"Explore Our Latest Dayim Zindagi Residences"}
           subHeading={"CHOOSE FROM DIFFERENT LISTING TYPE, SIZE AND VIEW."}
           link={"/dayim-zindagi/residences"}
-          bgImage={"/images/dsa/zindagi5.png"}
+          bgImage={"/images/dsa/zindagi3.jpg"}
           linkTitle={"Explore"}
         />
       </motion.section>

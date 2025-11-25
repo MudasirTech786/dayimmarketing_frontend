@@ -1,7 +1,7 @@
 const residence_types = [
   {
     id: 1,
-    image: "/images/dsa/vr/studio/2.png",
+    image: "/images/dsa/vr/studio/dl.png",
     link: "/dayim-living/vr/studio",
     title: "Studio Apartments",
   },

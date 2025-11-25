@@ -206,7 +206,7 @@ const ContactInfo = () => (
     <p className="text-sm">
       9-A, 1st/F Main Commercial, Al-Kabir Town Phase 2, Lahore.
     </p>
-    <p className="text-sm">+92-309-511-117-6</p>
+    <p className="text-sm">+92-308-511-117-6</p>
     <Link
       href="https://goo.gl/maps/2eyWmxmZH1FS8bFg8"
       target="_blank"

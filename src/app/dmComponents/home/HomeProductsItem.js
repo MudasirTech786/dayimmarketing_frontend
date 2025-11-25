@@ -5,7 +5,7 @@ const HomeProductsItem = ({ houseImg, type }) => {
   return (
     <div className="flex flex-col gap-3">
       <h4 className="text-second font-bold text-lg">{type}</h4>
-      <Link href={"/dayim-signature-apartments/residences"}>
+      <Link href={"/dayim-zindagi/residences"}>
         <img
           src={houseImg}
           alt=""

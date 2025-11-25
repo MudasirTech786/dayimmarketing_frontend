@@ -157,7 +157,7 @@ function Footer1() {
               <div>
                 <h3 className="text-2xl font-bold text-[#d6ad42] mb-6">Contact Us</h3>
                 {/* <p className="text-white text-lg font-medium">+92-423-597-617-4</p> */}
-                <p className="text-white text-lg font-medium">+92-309-511-117-6</p>
+                <p className="text-white text-lg font-medium">+92-308-511-117-6</p>
                 {/* <p className="text-white text-lg font-medium">+1 (718) 715-8208</p> */}
               </div>
 

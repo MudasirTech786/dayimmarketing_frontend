@@ -35,7 +35,7 @@ export default function HomeTab() {
       name: "Lower Ground Floor",
       floors: ["Lower Ground"],
       image: "/images/dz/tabs/lowerground.jpg",
-      type: "Two Bed Appartment",
+      type: "Two Bed Apartments",
       type1: "",
     },
     {
@@ -48,7 +48,7 @@ export default function HomeTab() {
       name: "1st - 2nd Floor",
       floors: ["1st", "2nd"],
       image: "/images/dz/tabs/floor12.jpg",
-      type: "Stidio Appartment",
+      type: "Studio Apartments",
     },
     {
       name: "3rd - 5th Floor",

@@ -8,10 +8,7 @@ export default function HomeSlider4() {
       description: `
 At Dayim Developers, we take pride in delivering what we promise — and doing it faster than expected. Our DSA project is a prime example of how commitment, planning, and relentless effort can turn vision into reality within record time.
 
-Within just one year, we successfully completed the grey structure, ensuring that every step of the construction process was carried out with precision and speed. Our timeline was strictly maintained — with SALB concrete poured every 20 days without fail. This consistent progress kept the project on track and ensured that no phase was left behind.
-
-To maintain the highest standards of quality, we used Pak Mix concrete, a trusted name in the industry, ensuring durability and long-lasting strength. Alongside the quality of materials, our dedicated workforce played a vital role. Our team of skilled laborers worked day and night, demonstrating unmatched dedication and hard work to meet ambitious deadlines.
-
+Within just one year, we successfully completed the grey structure, ensuring that every step of the construction process was carried out with precision and speed. Our timeline was strictly maintained — with SALB concrete poured every 20 days without fail.
 This remarkable pace of construction was achieved through:
 
 - Meticulous Planning – Every stage was scheduled and executed on time.
@@ -25,9 +22,9 @@ This remarkable pace of construction was achieved through:
 The result is a grey structure completed in record time, setting a new benchmark for efficiency and excellence in construction. At Dayim Developers, we don’t just build projects — we build trust, speed, and quality into everything we deliver.
     `,
       images: [
-        "/images/dz/dsa-1.jpg",
-        "/images/dz/dsa-2.jpg",
-        "/images/dz/dsa-3.jpg",
+        "/images/dz/dsa-4.jpg",
+        "/images/dz/dsa-5.jpg",
+        "/images/dz/dsa-6.jpg",
       ],
     },
     {
@@ -57,7 +54,7 @@ At Dayim Developers, we don’t just build projects — we build trust, lifestyl
           className="flex flex-col lg:flex-row items-center gap-8 lg:gap-16 p-6 lg:p-12"
         >
           {/* Text Section */}
-          <div className="w-full lg:w-1/2 text-base lg:text-lg text-gray-700 leading-relaxed space-y-4">
+          <div className="w-full lg:w-1/2 text-base lg:text-lg text-gray-700 leading-relaxed">
             <h3 className="text-2xl lg:text-3xl font-bold text-[#d6ad42]">
               {slide.title}
             </h3>

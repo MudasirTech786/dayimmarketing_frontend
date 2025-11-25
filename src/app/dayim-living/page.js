@@ -79,7 +79,7 @@ function Home() {
             >
               
               <Link
-                href="/dayim-signature-apartments/vr"
+                href="/dayim-living/vr"
                 className="flex items-center justify-center border-2 border-white py-3 w-[250px] gap-5 hover:scale-110 transition
                                               "
               >

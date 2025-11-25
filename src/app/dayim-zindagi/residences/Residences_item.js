@@ -95,7 +95,9 @@ function Residences_item({
   }
 
   return (
-    <div className="relative max-w-sm rounded-2xl overflow-hidden shadow-2xl border border-[#d6ad42]/50 bg-gradient-to-br from-black via-gray-900 to-gray-800 text-white hover:scale-[1.02] transition-transform duration-300">
+<div className="relative max-w-sm rounded-2xl overflow-hidden shadow-2xl border border-[#d6ad42]/50 
+                bg-[#4f4343] via-gray-900 to-gray-100 
+                text-white hover:scale-[1.02] transition-transform duration-300">
 
       {/* IMAGE */}
       <div className="relative">

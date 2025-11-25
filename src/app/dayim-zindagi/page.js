@@ -53,7 +53,7 @@ const features1 = [
 
 const features2 = [
   {
-    image: "/images/dsa/elevation-side-view.JPG",
+    image: "/images/dsa/elevations.JPG",
     title: "Reliable Construction",
     desc: "You’ve seen what we’ve delivered before — this is the next level.",
   },
@@ -335,7 +335,7 @@ function Home() {
                 className="rounded-[28px] overflow-hidden relative"
               >
                 <img
-                  src="/images/dsa/elevation-side-view_zindagi - 1.JPG"
+                  src="/images/dsa/elevations.JPG"
                   alt="Dayim Zindagi"
                   className="w-full h-[700px] object-cover"
                 />
@@ -387,22 +387,22 @@ function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
             {[
               {
-                image: "/images/dsa/zindagi4.JPG",
+                image: "/images/dsa/elevations.JPG",
                 title: "Reliable Construction",
                 desc: "You’ve seen what we’ve delivered before — this is the next level.",
               },
               {
-                image: "/images/dsa/zindagi4.JPG",
+                image: "/images/dsa/elevations.JPG",
                 title: "On-Ground Progress",
                 desc: "Construction begins the moment we go live — no waiting, no delays.",
               },
               {
-                image: "/images/dsa/zindagi4.JPG",
+                image: "/images/dsa/elevations.JPG",
                 title: "High ROI Potential",
                 desc: "Ideal for investors, entrepreneurs, and first-time buyers.",
               },
               {
-                image: "/images/dsa/zindagi4.JPG",
+                image: "/images/dsa/elevations.JPG",
                 title: "Client-First Approach",
                 desc: "Transparent processes, regular updates, and no hidden charges.",
               },
